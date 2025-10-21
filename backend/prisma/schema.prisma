@@ -14,7 +14,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model expenses {
+model Expense {
   id    String  @default(uuid()) @id
   currency String @default("JPY")
   amount Int
